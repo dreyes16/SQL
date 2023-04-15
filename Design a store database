@@ -1,0 +1,14 @@
+I created my own clothing store where  at least 5 columns for the kind of data were listed. I also, seleceted the item  where i at least sold 15 pieces, and listed in descending order. 
+CREATE TABLE clothes (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, quantity INTEGER, sold INTEGER);
+
+CREATE TABLE clothes (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, quantity INTEGER, sold INTEGER, color TEXT);
+
+
+INSERT INTO clothes VALUES (1, "Skirts", 25, 30, 15, "black");
+INSERT INTO clothes VALUES (2, "Shirts", 15, 30, 20, "green");
+INSERT INTO clothes VALUES (3, "Pants", 40, 30, 15, "black");
+INSERT INTO clothes VALUES (4, "Shorts", 10, 30, 20, "white");
+INSERT INTO clothes VALUES (5, "Socks", 5, 30, 25, "black");
+
+SELECT * FROM clothes WHERE sold >= 15 
+ORDER BY price desc;
